@@ -4,4 +4,8 @@ provider "aws" {
 
 resource "aws_s3_bucket" "lab_bucket" {
   bucket = "allan-prisma-iac-lab-test-bucket"
+
+  tags = {
+    Environment = "lab"
+  }
 }
